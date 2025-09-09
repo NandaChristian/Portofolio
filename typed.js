@@ -20,7 +20,8 @@ document.querySelectorAll(".btnSertif").forEach(btn => {
     } else {
       modalBody.innerHTML = `<img src="${src}" alt="Sertifikat">`;
     }
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 });
 
@@ -29,13 +30,22 @@ document.querySelectorAll(".btnResult").forEach(btn => {
   btn.addEventListener("click", () => {
     const src = btn.getAttribute("src");
     modalBody.innerHTML = `<img src="${src}" alt="Result">`;
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 });
 
 // close modal
-span.onclick = () => modal.style.display = "none";
-window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; };
+span.onclick = () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+};
+
+window.onclick = (e) => { 
+  if (e.target == modal) {
+    modal.style.display = "none"; };  
+    document.body.style.overflow = "auto";
+  }
 
 
 //animasi
