@@ -36,16 +36,8 @@ document.querySelectorAll(".btnResult").forEach(btn => {
 });
 
 // close modal
-span.onclick = () => {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-};
-
-window.onclick = (e) => { 
-  if (e.target == modal) {
-    modal.style.display = "none"; };  
-    document.body.style.overflow = "auto";
-  }
+span.onclick = () => modal.style.display = "none";
+window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; };
 
 
 //animasi
