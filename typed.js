@@ -20,8 +20,7 @@ document.querySelectorAll(".btnSertif").forEach(btn => {
     } else {
       modalBody.innerHTML = `<img src="${src}" alt="Sertifikat">`;
     }
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+    modal.style.display = "block";
   });
 });
 
@@ -30,8 +29,7 @@ document.querySelectorAll(".btnResult").forEach(btn => {
   btn.addEventListener("click", () => {
     const src = btn.getAttribute("src");
     modalBody.innerHTML = `<img src="${src}" alt="Result">`;
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+    modal.style.display = "block";
   });
 });
 
