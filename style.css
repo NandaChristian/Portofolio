@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background: linear-gradient(163deg, rgba(32,62,131,1) 32%, rgba(7,14,29,1) 54%);
+}
+
+
+/* section */
+section {
+  min-height: 85vh;     
+  align-items: center;   
+  padding: 60px 0;       
+}
+
+section article {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.row {
+  flex: 1;
+  padding: 25px 25px 15px;
+}
+
+.col-text {
+  width: 50%;
+}
+
+.col-image {
+  width: 50%;
+  display: flex;
+}
+
+.col-skill {
+  width: 30%;  
+  display: flex;
+  flex-direction: column;
+}
+
+.col-skill h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ot {
+  display: flex;         
+  gap: 15px;             
+  flex-wrap: nowrap;       
+}
+
+.skill-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background: transparent;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.skill-item img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.skill-item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1; 
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.col-skill h5 {
+  margin: 0;
+  display: inline-block;
+}
+
+.col-ex {
+  width: 30%;
+}
+
+.col-ex .btn {
+  margin-bottom: 20px;
+}
+
+.row-skill {
+  flex: 1;
+  padding: 0 25px 25px;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.row-ex {
+  flex: 1;
+  padding: 0 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+.contact-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 15px;
+}
+
+.contact-button .btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.contact-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-button a {
+  text-decoration: none;
+}
+
+
+#about h4 {
+  margin-top: 30px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  white-space: nowrap;
+  min-height: 60px;
+}
+
+p {
+  color: white;
+}
+
+.col-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+#myModal .modal-body {
+  position: relative;
+  margin: 5% auto;
+  width: 80%;
+  height: 80%;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#myModal embed,
+#myModal img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+}
+
+#myModal .close {
+  position: absolute;
+  top: 10px; 
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: red;
+  z-index: 1100;
+}
+
+
+#typed {
+  display: inline-block;
+  min-width: 100px; /* atur sesuai panjang teks terpanjang */
+}
+
+.typed-cursor {
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.button{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Base */
+.animasi {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* Muncul */
+.animasi.muncul {
+  opacity: 1;
+  transform: translate(0,0) scale(1);
+}
+
+/* Variasi arah */
+.fade-up { transform: translateY(50px); }
+.fade-left { transform: translateX(-50px); }
+.fade-right { transform: translateX(50px); }
+.zoom-in { transform: scale(0.8); }
+
+
+
+
+/* =========================
+  RESPONSIVE DESIGN
+  ========================= */
+
+/* Laptop (≤ 1200px) */
+@media (max-width: 1200px) {
+  section article {
+    max-width: 950px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .col-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .row-ex {
+    gap: 5rem;
+  }
+}
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  section article {
+    max-width: 750px;
+  }
+
+  .col-text, .col-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .col-image {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .col-image img {
+    width: 220px;
+    height: 220px;
+    margin: 0;
+  }
+
+  .row-ex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .col-ex {
+    width: 100%;
+  }
+
+  .row-skill {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .col-skill {
+    width: 100%;
+  }
+
+  .button {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* HP (≤ 576px) */
+@media (max-width: 576px) {
+  section article {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #about h4 {
+    font-size: 18px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .col-image img {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .contact-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-button .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
