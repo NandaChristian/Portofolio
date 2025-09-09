@@ -194,7 +194,7 @@ p {
   overflow: hidden;
 }
 
-#myModal embed,
+#myModal iframe,
 #myModal img {
   width: 100%;
   height: 100%;
