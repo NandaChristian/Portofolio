@@ -37,7 +37,7 @@ section article {
 }
 
 .col-skill {
-  width: 30%;  
+  width: 100%;  
   display: flex;
   flex-direction: column;
 }
@@ -93,7 +93,7 @@ section article {
 }
 
 .col-ex {
-  width: 30%;
+  width: 100%;
 }
 
 .col-ex .btn {
@@ -199,7 +199,7 @@ section article {
 
 .pro-item-lans:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgb(247, 245, 245);
 }
 
 
