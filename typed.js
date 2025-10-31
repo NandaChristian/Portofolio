@@ -41,6 +41,7 @@ window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
 //animasi
 document.addEventListener("DOMContentLoaded", () => {
   const articles = document.querySelectorAll(".animasi");
+  const op = document.querySelectorAll(".op");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -56,4 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   articles.forEach((article) => observer.observe(article)); 
+  op.forEach((op) => observer.observe(op)); 
 });

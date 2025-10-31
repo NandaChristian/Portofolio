@@ -144,6 +144,64 @@ section article {
   text-decoration: none;
 }
 
+.row-pro {
+  flex: 1;
+  padding: 0 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10rem;
+  
+}
+
+.col-pro {
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+}
+
+.col-pro h4 {
+ font-weight: bold;
+ 
+}
+
+.op {
+  display: flex;         
+  gap: 15px;             
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;    
+  justify-content: space-around;
+  margin-bottom: 50px;       
+}
+
+.pro-item{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pro-item img {
+  width: 300px;
+  height: 400pxpx;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.pro-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(247, 245, 245);
+}
+
+.pro-item-lans img {
+  width: 600px;
+  height: 800pxpx;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.pro-item-lans:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 
 #about h4 {
   margin-top: 30px;
@@ -243,6 +301,17 @@ p {
 
 /* Muncul */
 .animasi.muncul {
+  opacity: 1;
+  transform: translate(0,0) scale(1);
+}
+
+.op {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* Muncul */
+.op.muncul {
   opacity: 1;
   transform: translate(0,0) scale(1);
 }
