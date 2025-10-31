@@ -178,6 +178,7 @@ section article {
 .pro-item{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .pro-item-lans{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -195,7 +196,7 @@ section article {
 
 .pro-item-lans img {
   width: 600px;
-  height: 800pxpx;
+  height: 800px;
   flex-shrink: 0;
   object-fit: cover;
 }
