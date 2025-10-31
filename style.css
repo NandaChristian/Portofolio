@@ -178,13 +178,15 @@ section article {
 .pro-item{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.pro-item-lans{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
 .pro-item img {
   width: 300px;
   height: 400pxpx;
   flex-shrink: 0;
   object-fit: cover;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .pro-item:hover {
   transform: scale(1.05);
