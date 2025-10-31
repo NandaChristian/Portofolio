@@ -184,6 +184,7 @@ section article {
   height: 400pxpx;
   flex-shrink: 0;
   object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .pro-item:hover {
   transform: scale(1.05);
